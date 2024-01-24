@@ -33,7 +33,13 @@ $teams = [
 </head>
 
 <body>
-
+    <!-- STAMPIAMO L'ARRAY -->
+    <?php if (isset($teams)) { ?>
+        <?php foreach($teams as $team){ ?>
+            <h1><?php echo $team['team_1'] ?></h1>
+            <h1><?php echo $team['team_2'] ?></h1>
+        <?php } ?>
+    <?php } ?>
 </body>
 
 </html>
