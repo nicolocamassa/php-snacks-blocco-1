@@ -34,11 +34,14 @@ $teams = [
 
 <body>
     <!-- STAMPIAMO L'ARRAY -->
-    <?php if (isset($teams)) { ?>
+
         <?php foreach($teams as $team){ ?>
-            <div><?php echo $team['team_1']." - ".$team['team_2'] ?></div>
+            <div><?php echo  $team['team_1']." - "
+                            .$team['team_2']." | "
+                            .$team['points_1']." - "
+                            .$team['points_2'] ?></div>
         <?php } ?>
-    <?php } ?>
+
 </body>
 
 </html>
