@@ -43,6 +43,8 @@ if (isset($_GET['name'], $_GET['email'], $_GET['age'])) {
                 ?>
             </div>
         <?php } ?>
+
+        <!--  -->
     </form>
 </body>
 
