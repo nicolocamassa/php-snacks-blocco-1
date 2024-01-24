@@ -1,5 +1,5 @@
 <?php 
-    $post = [
+    $posts = [
         '27/09/2035' => [
             'post_id' => 'post 1',
             'username' => 'Gianni',
@@ -26,6 +26,15 @@
     <title>SNACK 3</title>
 </head>
 <body>
-    
+    <?php foreach($posts as $date => $post){ ?>
+        <div style="margin-top: 20px;"><?php echo $date; ?></div> 
+        <?php foreach($post as $key => $value) { ?>
+            <div><?php echo $value; ?></div>
+        <?php } ?>
+        
+    <?php } ?>
+    <!-- TODO: -->
+    <!-- Prendere la key con la data da post  -->
+    <!-- Per ogni chiave prendere le informazioni dei post -->
 </body>
 </html>
